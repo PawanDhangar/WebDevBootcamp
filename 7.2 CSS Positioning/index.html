@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    .blue-box {
+      /* background-color: blue; */
+      position: relative;
+      width: 500px;
+      height: 300px;
+      top: 250px;
+      left: 500px;
+      border: 1px solid;
+    }
+
+    .safron {
+      background-color: rgb(240, 88, 32);
+      width: 500px;
+      height: 100px;
+    }
+
+    .white {
+      background-color: rgb(255, 255, 255);
+      width: 500px;
+      height: 100px;
+    }
+
+    .green {
+      background-color: rgba(35, 184, 67, 0.927);
+      width: 500px;
+      height: 100px;
+    }
+
+    .wheel {
+      height: 94px;
+      width: 94px;
+      border: 2px solid darkblue;
+      border-radius: 50%;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .wheel .line {
+      height: 100%;
+      width: 1px;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      background: darkblue;
+    }
+
+    .line:nth-child(1) {
+      transform: rotate(15deg)
+    }
+
+    .line:nth-child(2) {
+      transform: rotate(30deg)
+    }
+
+    .line:nth-child(3) {
+      transform: rotate(45deg)
+    }
+
+    .line:nth-child(4) {
+      transform: rotate(60deg)
+    }
+
+    .line:nth-child(5) {
+      transform: rotate(75deg)
+    }
+
+    .line:nth-child(6) {
+      transform: rotate(90deg)
+    }
+
+    .line:nth-child(7) {
+      transform: rotate(105deg)
+    }
+
+    .line:nth-child(8) {
+      transform: rotate(120deg)
+    }
+
+    .line:nth-child(9) {
+      transform: rotate(135deg)
+    }
+
+    .line:nth-child(10) {
+      transform: rotate(150deg)
+    }
+
+    .line:nth-child(11) {
+      transform: rotate(165deg)
+    }
+
+    .line:nth-child(12) {
+      transform: rotate(180deg)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="safron"></div>
+    <div class="white">
+      <div class="wheel">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <div class="green"></div>
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>
