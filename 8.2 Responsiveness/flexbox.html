@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Flexbox</title>
   <style>
+    body {
+      display: flex;
+      margin: 50px 100px 0 50px;
+    }
+
+    .main {
+      flex: 1;
+    }
+
     .flex-container {
       display: flex;
     }
 
     .card {
       background: blue;
-      border: 30px solid white;
+      border: 30px solid rgb(255, 255, 255);
       height: 100px;
       flex: 1;
     }
@@ -28,14 +37,15 @@
 </head>
 
 <body>
-  <h1>CSS Flexbox</h1>
-  <div class="flex-container">
-    <div class="first card"></div>
-    <div class="second card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+  <div class="main">
+    <h1>CSS Flexbox</h1>
+    <div class="flex-container">
+      <div class="first card"></div>
+      <div class="second card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
   </div>
-
 
 </body>
 
